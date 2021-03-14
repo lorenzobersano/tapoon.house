@@ -8,7 +8,7 @@ export default function Home() {
     playMainTheme,
     { pause: pauseMainTheme, isPlaying: isPlayingMainTheme },
   ] = useSound("/john_cena.mp3", {
-    autoplay: false,
+    autoplay: true,
     loop: true,
   });
   const [playAirHorn, { stop: stopAirHorn }] = useSound("/air_horn.mp3");
